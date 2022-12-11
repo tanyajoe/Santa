@@ -1,0 +1,851 @@
+{
+	"info": {
+		"_postman_id": "42a29de5-d709-4af9-b3f2-b38d06c1ca1e",
+		"name": "3. BOX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9473224"
+	},
+	"item": [
+		{
+			"name": "Box-notifications",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}account/notifications",
+					"host": [
+						"{{santsURL}}account"
+					],
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get boxes key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"key\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}box/key",
+					"host": [
+						"{{santsURL}}box"
+					],
+					"path": [
+						"key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box1 with cash limit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const dataRequest = JSON.parse(request.data)\r",
+							"const response = pm.response.json()\r",
+							"\r",
+							"\r",
+							"pm.test(\"Name of the new Box returns entered name\", () => {\r",
+							"    pm.expect(response.box.name).to.eql(dataRequest.name)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Picture of the new Box returns choosen picture\", () => {\r",
+							"    pm.expect(response.box.picture).to.eql(dataRequest.picture)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"usePost of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.usePost).to.eql(dataRequest.usePost)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"useCashLimit of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useCashLimit).to.eql(dataRequest.useCashLimit)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"let cashLimit = dataRequest.cashLimit;\r",
+							"let cashLimitCurrency = dataRequest.cashLimitCurrency;\r",
+							"//console.log(cashLimit)\r",
+							"//console.log(cashLimitCurrency)\r",
+							"\r",
+							"pm.test(\"Cash Limit returns entered value\", () => {\r",
+							"    pm.expect(response.box.cashLimit).to.eql(cashLimit)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Cash Limit Currency returns choosen currency\", () => {\r",
+							"    pm.expect(response.box.cashLimitCurrency).to.eql(cashLimitCurrency)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using wish of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useWish).to.eql(dataRequest.useWish)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using names of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useNames).to.eql(dataRequest.useNames)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Phone requirement of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.isPhoneRequired).to.eql(dataRequest.isPhoneRequired)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": null,\r\n    \"name\": \"{{$randomNoun}}\",\r\n    \"key\": \"{{key}}\",\r\n    \"picture\": \"{{picture}}\",\r\n    \"usePost\": {{$randomBoolean}},\r\n    \"useCashLimit\": true,\r\n    \"cashLimit\": {{cashLimit}},\r\n    \"cashLimitCurrency\": \"{{cashLimitCurrency}}\",\r\n    \"useWish\": {{$randomBoolean}},\r\n    \"useCircleDraw\": null,\r\n    \"isInviteAfterDraw\": null,\r\n    \"isArchived\": null,\r\n    \"createAdminCard\": null,\r\n    \"isCreated\": true,\r\n    \"useNames\": {{$randomBoolean}},\r\n    \"isPhoneRequired\": {{$randomBoolean}},\r\n    \"logo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{santsURL}}box",
+					"host": [
+						"{{santsURL}}box"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get box1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json()\r",
+							"\r",
+							"let keyOfTheBox = pm.environment.get(\"key\");\r",
+							"\r",
+							"pm.test(\"Key of the new Box returns entered key\", () => {\r",
+							"    pm.expect(response.box.key).to.eql(keyOfTheBox)\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookieForBox}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}box/{{key}}",
+					"host": [
+						"{{santsURL}}box"
+					],
+					"path": [
+						"{{key}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Box1 edit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const dataRequest = JSON.parse(request.data)\r",
+							"const response = pm.response.json()\r",
+							"\r",
+							"\r",
+							"pm.test(\"Name of the Box returns edited name\", () => {\r",
+							"    pm.expect(response.box.name).to.eql(dataRequest.name)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Picture of the new Box returns choosen picture\", () => {\r",
+							"    pm.expect(response.box.picture).to.eql(dataRequest.picture)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"usePost of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.usePost).to.eql(dataRequest.usePost)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"useCashLimit of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useCashLimit).to.eql(dataRequest.useCashLimit)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"let changedCashLimit = dataRequest.cashLimit;\r",
+							"let changedCashLimitCurrency = dataRequest.cashLimitCurrency;\r",
+							"//console.log(changedCashLimit)\r",
+							"//console.log(changedCashLimitCurrency)\r",
+							"\r",
+							"pm.test(\"Cash Limit returns changed value\", () => {\r",
+							"    pm.expect(response.box.cashLimit).to.eql(changedCashLimit)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Cash Limit Currency returns chaged currency\", () => {\r",
+							"    pm.expect(response.box.cashLimitCurrency).to.eql(changedCashLimitCurrency)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using wish of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useWish).to.eql(dataRequest.useWish)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using names of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useNames).to.eql(dataRequest.useNames)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Phone requirement of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.isPhoneRequired).to.eql(dataRequest.isPhoneRequired)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": null,\r\n  \"name\": \"{{$randomNoun}}\",\r\n  \"key\": \"{{key}}\",\r\n  \"picture\": \"{{changedPicture}}\",\r\n  \"usePost\": {{$randomBoolean}},\r\n  \"useCashLimit\": true,\r\n  \"cashLimit\": {{changedCashLimit}},\r\n  \"cashLimitCurrency\": \"{{changedCashLimitCurrency}}\",\r\n  \"useWish\": {{$randomBoolean}},\r\n  \"useCircleDraw\": null,\r\n  \"isInviteAfterDraw\": null,\r\n  \"isArchived\": null,\r\n  \"createAdminCard\": null,\r\n  \"isCreated\": null,\r\n  \"useNames\": {{$randomBoolean}},\r\n  \"isPhoneRequired\": {{$randomBoolean}},\r\n  \"logo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{santsURL}}box",
+					"host": [
+						"{{santsURL}}box"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete box1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let response = responseBody\r",
+							"pm.test(\"responseBody returns OK\", () => {\r",
+							"    pm.expect(response).to.eql(\"OK\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}box/{{key}}",
+					"host": [
+						"{{santsURL}}box"
+					],
+					"path": [
+						"{{key}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get boxes key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"key\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}box/key",
+					"host": [
+						"{{santsURL}}box"
+					],
+					"path": [
+						"key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box2 without cash limit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const dataRequest = JSON.parse(request.data)\r",
+							"const response = pm.response.json()\r",
+							"\r",
+							"\r",
+							"pm.test(\"Name of the new Box returns entered name\", () => {\r",
+							"    pm.expect(response.box.name).to.eql(dataRequest.name)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Picture of the new Box returns choosen picture\", () => {\r",
+							"    pm.expect(response.box.picture).to.eql(dataRequest.picture)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"usePost of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.usePost).to.eql(dataRequest.usePost)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"useCashLimit of the new Box returns false\", () => {\r",
+							"    pm.expect(response.box.useCashLimit).to.eql(dataRequest.useCashLimit)\r",
+							"})\r",
+							"\r",
+							"//let cashLimit = pm.environment.get(\"cashLimitBox2\");\r",
+							"//let cashLimitCurrency = pm.environment.get(\"cashLimitCurrencyBox2\");\r",
+							"//console.log(cashLimit)\r",
+							"//console.log(cashLimitCurrency)\r",
+							"\r",
+							"pm.test(\"Cash Limit returns null\", () => {\r",
+							"    pm.expect(response.box.cashLimit).to.eql(null)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Cash Limit Currency returns null\", () => {\r",
+							"    pm.expect(response.box.cashLimitCurrency).to.eql(null)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using wish of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useWish).to.eql(dataRequest.useWish)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using names of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useNames).to.eql(dataRequest.useNames)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Phone requirement of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.isPhoneRequired).to.eql(dataRequest.isPhoneRequired)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": null,\r\n    \"name\": \"{{$randomNoun}}\",\r\n    \"key\": \"{{key}}\",\r\n    \"picture\": \"{{pictureBox2}}\",\r\n    \"usePost\": {{$randomBoolean}},\r\n    \"useCashLimit\": false,\r\n    \"cashLimit\": {{cashLimitBox2}},\r\n    \"cashLimitCurrency\": \"{{cashLimitCurrencyBox2}}\",\r\n    \"useWish\": {{$randomBoolean}},\r\n    \"useCircleDraw\": null,\r\n    \"isInviteAfterDraw\": null,\r\n    \"isArchived\": null,\r\n    \"createAdminCard\": null,\r\n    \"isCreated\": true,\r\n    \"useNames\": {{$randomBoolean}},\r\n    \"isPhoneRequired\": {{$randomBoolean}},\r\n    \"logo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{santsURL}}box",
+					"host": [
+						"{{santsURL}}box"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Box2 edit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const dataRequest = JSON.parse(request.data)\r",
+							"const response = pm.response.json()\r",
+							"\r",
+							"\r",
+							"pm.test(\"Name of the Box returns edited name\", () => {\r",
+							"    pm.expect(response.box.name).to.eql(dataRequest.name)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Picture of the new Box returns choosen picture\", () => {\r",
+							"    pm.expect(response.box.picture).to.eql(dataRequest.picture)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"usePost of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.usePost).to.eql(dataRequest.usePost)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"useCashLimit of the Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useCashLimit).to.eql(dataRequest.useCashLimit)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"let changedCashLimit = dataRequest.cashLimit;\r",
+							"let changedCashLimitCurrency = dataRequest.cashLimitCurrency;\r",
+							"//console.log(changedCashLimit)\r",
+							"//console.log(changedCashLimitCurrency)\r",
+							"\r",
+							"pm.test(\"Cash Limit returns changed value\", () => {\r",
+							"    pm.expect(response.box.cashLimit).to.eql(changedCashLimit)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Cash Limit Currency returns chaged currency\", () => {\r",
+							"    pm.expect(response.box.cashLimitCurrency).to.eql(changedCashLimitCurrency)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using wish of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useWish).to.eql(dataRequest.useWish)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Using names of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.useNames).to.eql(dataRequest.useNames)\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Phone requirement of the new Box returns choosen value\", () => {\r",
+							"    pm.expect(response.box.isPhoneRequired).to.eql(dataRequest.isPhoneRequired)\r",
+							"})\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": null,\r\n  \"name\": \"{{$randomNoun}}\",\r\n  \"key\": \"{{key}}\",\r\n  \"picture\": \"tree\",\r\n  \"usePost\": {{$randomBoolean}},\r\n  \"useCashLimit\": true,\r\n  \"cashLimit\": {{cashLimitBox2}},\r\n  \"cashLimitCurrency\": \"{{cashLimitCurrencyBox2}}\",\r\n  \"useWish\": {{$randomBoolean}},\r\n  \"useCircleDraw\": null,\r\n  \"isInviteAfterDraw\": null,\r\n  \"isArchived\": null,\r\n  \"createAdminCard\": null,\r\n  \"isCreated\": null,\r\n  \"useNames\": {{$randomBoolean}},\r\n  \"isPhoneRequired\": {{$randomBoolean}},\r\n  \"logo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{santsURL}}box",
+					"host": [
+						"{{santsURL}}box"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete box2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"let response = responseBody\r",
+							"pm.test(\"responseBody returns OK\", () => {\r",
+							"    pm.expect(response).to.eql(\"OK\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}box/{{key}}",
+					"host": [
+						"{{santsURL}}box"
+					],
+					"path": [
+						"{{key}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get boxes key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"key\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}box/key",
+					"host": [
+						"{{santsURL}}box"
+					],
+					"path": [
+						"key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create box3 with invalid cash limit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": null,\r\n    \"name\": \"{{$randomNoun}}\",\r\n    \"key\": \"{{key}}\",\r\n    \"picture\": \"{{picture}}\",\r\n    \"usePost\": {{$randomBoolean}},\r\n    \"useCashLimit\": true,\r\n    \"cashLimit\": {{invalidCashLimit}},\r\n    \"cashLimitCurrency\": \"{{cashLimitCurrency}}\",\r\n    \"useWish\": {{$randomBoolean}},\r\n    \"useCircleDraw\": null,\r\n    \"isInviteAfterDraw\": null,\r\n    \"isArchived\": null,\r\n    \"createAdminCard\": null,\r\n    \"isCreated\": true,\r\n    \"useNames\": {{$randomBoolean}},\r\n    \"isPhoneRequired\": {{$randomBoolean}},\r\n    \"logo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{santsURL}}box",
+					"host": [
+						"{{santsURL}}box"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get boxes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "{{cookie}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{santsURL}}account/boxes",
+					"host": [
+						"{{santsURL}}account"
+					],
+					"path": [
+						"boxes"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "cookieForBox",
+			"value": "=",
+			"disabled": true
+		},
+		{
+			"key": "keyOfTheBox",
+			"value": "",
+			"disabled": true
+		},
+		{
+			"key": "nameOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "pictureOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "cashLimitOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "cashLimitCurrensyOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "valueUsePost",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "valueUseWish",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "valueUseNames",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "PhoneRequired",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "valueUseCashLimit",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "changedPictureOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "changedCashLimitOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "changedCashLimitCurrensyOfTheBox",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"value": "",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "key",
+			"value": "",
+			"disabled": true
+		}
+	]
+}

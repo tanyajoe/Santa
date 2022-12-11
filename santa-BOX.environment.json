@@ -1,0 +1,87 @@
+{
+	"id": "95c8d426-4e02-4b48-835e-f7dbae07934a",
+	"name": "Santa",
+	"values": [
+		{
+			"key": "santsURL",
+			"value": "https://staging.lpitko.ru/api/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cookie",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "picture",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cashLimit",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cashLimitCurrency",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "changedPicture",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "changedCashLimit",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "changedCashLimitCurrency",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "pictureBox2",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cashLimitBox2",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "cashLimitCurrencyBox2",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "invalidCashLimit",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "key",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-12-11T23:44:13.560Z",
+	"_postman_exported_using": "Postman/10.5.8"
+}
