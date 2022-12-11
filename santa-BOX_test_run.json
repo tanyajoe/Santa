@@ -1,0 +1,1734 @@
+{
+	"id": "14bcc765-f328-47b3-b6d0-cf9402e22ab1",
+	"name": "3. BOX",
+	"timestamp": "2022-12-11T23:40:44.663Z",
+	"collection_id": "9473224-42a29de5-d709-4af9-b3f2-b38d06c1ca1e",
+	"folder_id": 0,
+	"environment_id": "9473224-95c8d426-4e02-4b48-835e-f7dbae07934a",
+	"totalPass": 676,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "22d61690-9da0-47cd-ba17-0dc9f0833932",
+			"name": "Box-notifications",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				77,
+				50,
+				32,
+				34,
+				30,
+				30,
+				29,
+				33,
+				30,
+				28,
+				38,
+				24,
+				25
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e1842ee9-d69c-41e6-9598-c8e4c764047e",
+			"name": "Get boxes key",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				41,
+				28,
+				33,
+				32,
+				27,
+				33,
+				32,
+				26,
+				34,
+				31,
+				23,
+				24,
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7cd2d729-01aa-436e-88b3-f8667a937b39",
+			"name": "Create box1 with cash limit",
+			"time": 89,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name of the new Box returns entered name": true,
+				"Picture of the new Box returns choosen picture": true,
+				"usePost of the new Box returns choosen value": true,
+				"useCashLimit of the new Box returns choosen value": true,
+				"Cash Limit returns entered value": true,
+				"Cash Limit Currency returns choosen currency": true,
+				"Using wish of the new Box returns choosen value": true,
+				"Using names of the new Box returns choosen value": true,
+				"Phone requirement of the new Box returns choosen value": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Name of the new Box returns entered name": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Picture of the new Box returns choosen picture": {
+					"pass": 13,
+					"fail": 0
+				},
+				"usePost of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"useCashLimit of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit returns entered value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit Currency returns choosen currency": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using wish of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using names of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Phone requirement of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				97,
+				95,
+				99,
+				69,
+				94,
+				71,
+				81,
+				88,
+				76,
+				83,
+				107,
+				81,
+				89
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns entered value": true,
+					"Cash Limit Currency returns choosen currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				}
+			]
+		},
+		{
+			"id": "7675c951-cdeb-4b0c-957b-9a4ed9930c6c",
+			"name": "Get box1",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Key of the new Box returns entered key": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Key of the new Box returns entered key": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				61,
+				37,
+				36,
+				41,
+				35,
+				42,
+				49,
+				37,
+				36,
+				31,
+				32,
+				33,
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				},
+				{
+					"Status code is 200": true,
+					"Key of the new Box returns entered key": true
+				}
+			]
+		},
+		{
+			"id": "94dfe2c6-8447-4b9f-9720-0ff1b63b5528",
+			"name": "Box1 edit",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name of the Box returns edited name": true,
+				"Picture of the new Box returns choosen picture": true,
+				"usePost of the new Box returns choosen value": true,
+				"useCashLimit of the new Box returns choosen value": true,
+				"Cash Limit returns changed value": true,
+				"Cash Limit Currency returns chaged currency": true,
+				"Using wish of the new Box returns choosen value": true,
+				"Using names of the new Box returns choosen value": true,
+				"Phone requirement of the new Box returns choosen value": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Name of the Box returns edited name": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Picture of the new Box returns choosen picture": {
+					"pass": 13,
+					"fail": 0
+				},
+				"usePost of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"useCashLimit of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit returns changed value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit Currency returns chaged currency": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using wish of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using names of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Phone requirement of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				57,
+				45,
+				48,
+				45,
+				52,
+				55,
+				51,
+				45,
+				62,
+				46,
+				41,
+				41,
+				48
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				}
+			]
+		},
+		{
+			"id": "53475b0b-3c2c-4228-9b26-b105317662f3",
+			"name": "Delete box1",
+			"time": 58,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"responseBody returns OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"responseBody returns OK": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				47,
+				39,
+				42,
+				45,
+				53,
+				36,
+				45,
+				40,
+				37,
+				32,
+				42,
+				35,
+				58
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				}
+			]
+		},
+		{
+			"id": "90ffb50f-db16-4e8c-93a2-c6d3e51d93a9",
+			"name": "Get boxes key",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				30,
+				28,
+				68,
+				23,
+				26,
+				34,
+				35,
+				45,
+				31,
+				22,
+				25,
+				25,
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "91491b5e-ec8d-4dc4-b3aa-a91c48215408",
+			"name": "Create box2 without cash limit",
+			"time": 82,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name of the new Box returns entered name": true,
+				"Picture of the new Box returns choosen picture": true,
+				"usePost of the new Box returns choosen value": true,
+				"useCashLimit of the new Box returns false": true,
+				"Cash Limit returns null": true,
+				"Cash Limit Currency returns null": true,
+				"Using wish of the new Box returns choosen value": true,
+				"Using names of the new Box returns choosen value": true,
+				"Phone requirement of the new Box returns choosen value": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Name of the new Box returns entered name": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Picture of the new Box returns choosen picture": {
+					"pass": 13,
+					"fail": 0
+				},
+				"usePost of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"useCashLimit of the new Box returns false": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit returns null": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit Currency returns null": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using wish of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using names of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Phone requirement of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				115,
+				80,
+				81,
+				90,
+				93,
+				87,
+				77,
+				93,
+				72,
+				68,
+				75,
+				69,
+				82
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the new Box returns entered name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the new Box returns false": true,
+					"Cash Limit returns null": true,
+					"Cash Limit Currency returns null": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				}
+			]
+		},
+		{
+			"id": "34c54cac-5ccc-4ec5-a9e5-b28333a3d069",
+			"name": "Box2 edit",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Name of the Box returns edited name": true,
+				"Picture of the new Box returns choosen picture": true,
+				"usePost of the new Box returns choosen value": true,
+				"useCashLimit of the Box returns choosen value": true,
+				"Cash Limit returns changed value": true,
+				"Cash Limit Currency returns chaged currency": true,
+				"Using wish of the new Box returns choosen value": true,
+				"Using names of the new Box returns choosen value": true,
+				"Phone requirement of the new Box returns choosen value": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Name of the Box returns edited name": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Picture of the new Box returns choosen picture": {
+					"pass": 13,
+					"fail": 0
+				},
+				"usePost of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"useCashLimit of the Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit returns changed value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Cash Limit Currency returns chaged currency": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using wish of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Using names of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				},
+				"Phone requirement of the new Box returns choosen value": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				122,
+				54,
+				41,
+				106,
+				46,
+				47,
+				46,
+				41,
+				54,
+				47,
+				40,
+				43,
+				38
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				},
+				{
+					"Status code is 200": true,
+					"Name of the Box returns edited name": true,
+					"Picture of the new Box returns choosen picture": true,
+					"usePost of the new Box returns choosen value": true,
+					"useCashLimit of the Box returns choosen value": true,
+					"Cash Limit returns changed value": true,
+					"Cash Limit Currency returns chaged currency": true,
+					"Using wish of the new Box returns choosen value": true,
+					"Using names of the new Box returns choosen value": true,
+					"Phone requirement of the new Box returns choosen value": true
+				}
+			]
+		},
+		{
+			"id": "265a2121-6f8f-4c5c-b5cc-a41dc08d332d",
+			"name": "Delete box2",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"responseBody returns OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				},
+				"responseBody returns OK": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				47,
+				39,
+				39,
+				39,
+				40,
+				36,
+				47,
+				109,
+				46,
+				46,
+				37,
+				47,
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				},
+				{
+					"Status code is 200": true,
+					"responseBody returns OK": true
+				}
+			]
+		},
+		{
+			"id": "f09c3427-51ca-452f-955e-61c4d0fb7202",
+			"name": "Get boxes key",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				26,
+				32,
+				28,
+				24,
+				25,
+				25,
+				29,
+				36,
+				29,
+				24,
+				21,
+				24,
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4d515053-b45b-450d-8633-da032bfffcda",
+			"name": "Create box3 with invalid cash limit",
+			"time": 27,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				39,
+				34,
+				23,
+				18,
+				26,
+				21,
+				30,
+				22,
+				22,
+				18,
+				19,
+				21,
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				}
+			]
+		},
+		{
+			"id": "7b02a9f0-6ca5-477a-acf1-9adb8ef3905f",
+			"name": "Get boxes",
+			"time": 223,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 13,
+					"fail": 0
+				}
+			},
+			"times": [
+				297,
+				300,
+				236,
+				237,
+				247,
+				250,
+				318,
+				238,
+				222,
+				245,
+				328,
+				305,
+				223
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 13,
+	"totalTime": 10624,
+	"collection": {
+		"requests": [
+			{
+				"id": "22d61690-9da0-47cd-ba17-0dc9f0833932",
+				"method": "GET"
+			},
+			{
+				"id": "e1842ee9-d69c-41e6-9598-c8e4c764047e",
+				"method": "GET"
+			},
+			{
+				"id": "7cd2d729-01aa-436e-88b3-f8667a937b39",
+				"method": "POST"
+			},
+			{
+				"id": "7675c951-cdeb-4b0c-957b-9a4ed9930c6c",
+				"method": "GET"
+			},
+			{
+				"id": "94dfe2c6-8447-4b9f-9720-0ff1b63b5528",
+				"method": "PUT"
+			},
+			{
+				"id": "53475b0b-3c2c-4228-9b26-b105317662f3",
+				"method": "DELETE"
+			},
+			{
+				"id": "90ffb50f-db16-4e8c-93a2-c6d3e51d93a9",
+				"method": "GET"
+			},
+			{
+				"id": "91491b5e-ec8d-4dc4-b3aa-a91c48215408",
+				"method": "POST"
+			},
+			{
+				"id": "34c54cac-5ccc-4ec5-a9e5-b28333a3d069",
+				"method": "PUT"
+			},
+			{
+				"id": "265a2121-6f8f-4c5c-b5cc-a41dc08d332d",
+				"method": "DELETE"
+			},
+			{
+				"id": "f09c3427-51ca-452f-955e-61c4d0fb7202",
+				"method": "GET"
+			},
+			{
+				"id": "4d515053-b45b-450d-8633-da032bfffcda",
+				"method": "POST"
+			},
+			{
+				"id": "7b02a9f0-6ca5-477a-acf1-9adb8ef3905f",
+				"method": "GET"
+			}
+		]
+	}
+}

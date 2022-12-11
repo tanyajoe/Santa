@@ -1,0 +1,14 @@
+picture,cashLimit,cashLimitCurrency,changedPicture,changedCashLimit,changedCashLimitCurrency,pictureBox2,cashLimitBox2,cashLimitCurrencyBox2,invalidCashLimit
+gift,1,eur,cake,11,uah,cake,1,eur,0
+cup_one,5,rub,cup_cake,15,byn,cup_cake,5,rub,0,1
+cup_two,100,uah,cookie_tree,110,kzt,cookie_tree,100,uah,
+cake,1000,byn,cookie_star,1010,usd,cookie_star,1000,byn,qwe
+cup_cake,5000,kzt,lollipop,5010,eur,lollipop,5000,kzt,йцу
+cookie_tree,1,usd,mittens,11,rub,mittens,1,usd,!@#$%^&*()
+cookie_star,5,eur,tree,15,uah,tree,5,eur,0
+lollipop,100,rub,tree_toys,110,byn,tree_toys,100,rub,0,1
+mittens,1000,uah,santa,1010,kzt,santa,1000,uah,
+tree,5000,byn,house_one,5010,usd,house_one,5000,byn,qwe
+tree_toys,1,kzt,gift,11,eur,gift,1,kzt,йцу
+santa,5,usd,cup_one,15,rub,cup_one,5,usd,
+house_one,100,eur,cup_two,110,uah,cup_two,100,eur,
