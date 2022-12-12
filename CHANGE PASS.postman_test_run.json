@@ -1,0 +1,126 @@
+{
+	"id": "999ae7fc-308c-4de1-8032-a2b615db114d",
+	"name": "2. CHANGE PASS",
+	"timestamp": "2022-12-12T19:56:17.427Z",
+	"collection_id": "9473224-aee992b5-5273-4f5f-b081-6e14cb50df1e",
+	"folder_id": 0,
+	"environment_id": "9473224-95c8d426-4e02-4b48-835e-f7dbae07934a",
+	"totalPass": 14,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e9334d25-baee-4a64-a7f0-1ed98ca6e3c4",
+			"name": "Change pass (valid)",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 7,
+					"fail": 0
+				}
+			},
+			"times": [
+				80,
+				44,
+				47,
+				48,
+				39,
+				45,
+				45
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				},
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d93db3e7-454a-4cde-b890-ada259c46e70",
+			"name": "Change pass (invalid)",
+			"time": 25,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 7,
+					"fail": 0
+				}
+			},
+			"times": [
+				34,
+				27,
+				28,
+				27,
+				27,
+				25,
+				25
+			],
+			"allTests": [
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				},
+				{
+					"Status code is 400": true
+				}
+			]
+		}
+	],
+	"count": 7,
+	"totalTime": 541,
+	"collection": {
+		"requests": [
+			{
+				"id": "e9334d25-baee-4a64-a7f0-1ed98ca6e3c4",
+				"method": "PUT"
+			},
+			{
+				"id": "d93db3e7-454a-4cde-b890-ada259c46e70",
+				"method": "PUT"
+			}
+		]
+	}
+}
